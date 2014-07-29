@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FA4D913198728E800B01EAF /* DecimalUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA4D912198728E800B01EAF /* DecimalUtils.h */; };
+		5FA4D915198728E800B01EAF /* DecimalUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4D914198728E800B01EAF /* DecimalUtils.m */; };
+		5FA4D91B198728E800B01EAF /* libDecimalUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA4D90F198728E800B01EAF /* libDecimalUtils.a */; };
+		5FA4D92A198730F100B01EAF /* DecimalUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4D929198730F100B01EAF /* DecimalUtilsTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FA4D91C198728E800B01EAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FA4D907198728E800B01EAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FA4D90E198728E800B01EAF;
+			remoteInfo = DecimalUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FA4D90F198728E800B01EAF /* libDecimalUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDecimalUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA4D912198728E800B01EAF /* DecimalUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecimalUtils.h; sourceTree = "<group>"; };
+		5FA4D914198728E800B01EAF /* DecimalUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecimalUtils.m; sourceTree = "<group>"; };
+		5FA4D91A198728E800B01EAF /* DecimalUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecimalUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA4D920198728E800B01EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA4D929198730F100B01EAF /* DecimalUtilsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalUtilsTest.m; sourceTree = "<group>"; };
+		5FEBE5ED198744D700CD76CB /* DecimalUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DecimalUtils.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FA4D90C198728E800B01EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA4D917198728E800B01EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA4D91B198728E800B01EAF /* libDecimalUtils.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FA4D906198728E800B01EAF = {
+			isa = PBXGroup;
+			children = (
+				5FEBE5ED198744D700CD76CB /* DecimalUtils.podspec */,
+				5FA4D911198728E800B01EAF /* DecimalUtils */,
+				5FA4D91E198728E800B01EAF /* DecimalUtilsTests */,
+				5FA4D910198728E800B01EAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FA4D910198728E800B01EAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4D90F198728E800B01EAF /* libDecimalUtils.a */,
+				5FA4D91A198728E800B01EAF /* DecimalUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FA4D911198728E800B01EAF /* DecimalUtils */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4D912198728E800B01EAF /* DecimalUtils.h */,
+				5FA4D914198728E800B01EAF /* DecimalUtils.m */,
+			);
+			path = DecimalUtils;
+			sourceTree = "<group>";
+		};
+		5FA4D91E198728E800B01EAF /* DecimalUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4D91F198728E800B01EAF /* Supporting Files */,
+				5FA4D929198730F100B01EAF /* DecimalUtilsTest.m */,
+			);
+			path = DecimalUtilsTests;
+			sourceTree = "<group>";
+		};
+		5FA4D91F198728E800B01EAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4D920198728E800B01EAF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5FA4D90D198728E800B01EAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA4D913198728E800B01EAF /* DecimalUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5FA4D90E198728E800B01EAF /* DecimalUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA4D923198728E800B01EAF /* Build configuration list for PBXNativeTarget "DecimalUtils" */;
+			buildPhases = (
+				5FA4D90B198728E800B01EAF /* Sources */,
+				5FA4D90C198728E800B01EAF /* Frameworks */,
+				5FA4D90D198728E800B01EAF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecimalUtils;
+			productName = DecimalUtils;
+			productReference = 5FA4D90F198728E800B01EAF /* libDecimalUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5FA4D919198728E800B01EAF /* DecimalUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA4D926198728E900B01EAF /* Build configuration list for PBXNativeTarget "DecimalUtilsTests" */;
+			buildPhases = (
+				5FA4D916198728E800B01EAF /* Sources */,
+				5FA4D917198728E800B01EAF /* Frameworks */,
+				5FA4D918198728E800B01EAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA4D91D198728E800B01EAF /* PBXTargetDependency */,
+			);
+			name = DecimalUtilsTests;
+			productName = DecimalUtilsTests;
+			productReference = 5FA4D91A198728E800B01EAF /* DecimalUtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FA4D907198728E800B01EAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Dmitriy Zakharkin";
+				TargetAttributes = {
+					5FA4D90E198728E800B01EAF = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					5FA4D919198728E800B01EAF = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 5FA4D90E198728E800B01EAF;
+					};
+				};
+			};
+			buildConfigurationList = 5FA4D90A198728E800B01EAF /* Build configuration list for PBXProject "DecimalUtils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5FA4D906198728E800B01EAF;
+			productRefGroup = 5FA4D910198728E800B01EAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FA4D90E198728E800B01EAF /* DecimalUtils */,
+				5FA4D919198728E800B01EAF /* DecimalUtilsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FA4D918198728E800B01EAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FA4D90B198728E800B01EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA4D915198728E800B01EAF /* DecimalUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA4D916198728E800B01EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA4D92A198730F100B01EAF /* DecimalUtilsTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FA4D91D198728E800B01EAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FA4D90E198728E800B01EAF /* DecimalUtils */;
+			targetProxy = 5FA4D91C198728E800B01EAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5FA4D921198728E800B01EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5FA4D922198728E800B01EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5FA4D924198728E800B01EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FA4D925198728E800B01EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5FA4D927198728E900B01EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DecimalUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FA4D928198728E900B01EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DecimalUtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FA4D90A198728E800B01EAF /* Build configuration list for PBXProject "DecimalUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA4D921198728E800B01EAF /* Debug */,
+				5FA4D922198728E800B01EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FA4D923198728E800B01EAF /* Build configuration list for PBXNativeTarget "DecimalUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA4D924198728E800B01EAF /* Debug */,
+				5FA4D925198728E800B01EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FA4D926198728E900B01EAF /* Build configuration list for PBXNativeTarget "DecimalUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA4D927198728E900B01EAF /* Debug */,
+				5FA4D928198728E900B01EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FA4D907198728E800B01EAF /* Project object */;
+}
