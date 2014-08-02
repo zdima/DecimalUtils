@@ -57,9 +57,12 @@
     XCTAssert(decimalIsLeftLessOrEqual(decimalFromDouble(17.0), decimalFromDouble(17.0)), @"decimalIsLeftLessOrEqual");
 
 	XCTAssert( decimalIsEqual( decimalFromDouble(18.0), decimalMAX(decimalFromDouble(18.0), decimalFromDouble(1.8))), @"decimalMAX 18-1.8=18");
+	XCTAssert( decimalIsEqual( decimalFromDouble(20348.14), decimalMAX(decimalFromDouble(20348.14), decimalFromDouble(20118.14))), @"decimalMAX 20348.14-20118.14=20348.14");
 	XCTAssert( decimalIsEqual( decimalFromDouble(18.0), decimalMAX(decimalFromDouble(1.8), decimalFromDouble(18.0))), @"decimalMAX 1.8-18=18");
 	XCTAssert( decimalIsEqual( decimalFromDouble(18.0), decimalMAX(decimalFromDouble(17.0), decimalFromDouble(18.0))), @"decimalMAX 17-18=18");
 	XCTAssert( decimalIsEqual( decimalFromDouble(18.0), decimalMAX(decimalFromDouble(18.0), decimalFromDouble(17.0))), @"decimalMAX 18-17=18");
+	XCTAssert( decimalIsEqual( decimalFromDouble(-17.0), decimalMAX(decimalFromDouble(-17.0), decimalFromDouble(-18.0))), @"decimalMAX (-17)(-18)=(-17)");
+	XCTAssert( decimalIsEqual( decimalFromDouble(18.0), decimalMAX(decimalFromDouble(18.0), decimalFromDouble(17.0))), @"decimalMAX (-18)(-17)=(-17)");
 	XCTAssert( decimalIsEqual( decimalFromDouble(1867.0), decimalMAX(decimalFromDouble(17.0), decimalFromDouble(1867.0))), @"decimalMAX 17-1867=1867");
 	XCTAssert( decimalIsEqual( decimalFromDouble(1867.0), decimalMAX(decimalFromDouble(1867.0), decimalFromDouble(17.0))), @"decimalMAX 1867-17=1867");
 	XCTAssert( decimalIsEqual( decimalFromDouble(17.0), decimalMAX(decimalFromDouble(17.0), decimalFromDouble(-17.0))), @"decimalMAX 17-(-17)=17");
@@ -68,8 +71,11 @@
 	XCTAssert( decimalIsEqual( decimalFromDouble(-17.0), decimalMAX(decimalFromDouble(-17.0), decimalFromDouble(-17.0))), @"decimalMAX (-17)-(-17)=(-17)");
 	XCTAssert( decimalIsEqual( decimalZero, decimalMAX(decimalZero, decimalZero)), @"decimalMAX 0-0=0");
 
+	XCTAssert( decimalIsEqual( decimalFromDouble(20118.14), decimalMIN(decimalFromDouble(20348.14), decimalFromDouble(20118.14))), @"decimalMAX 20348.14-20118.14=20118.14");
 	XCTAssert( decimalIsEqual( decimalFromDouble(17.0), decimalMIN(decimalFromDouble(17.0), decimalFromDouble(18.0))), @"decimalMIN 17-18=17");
 	XCTAssert( decimalIsEqual( decimalFromDouble(17.0), decimalMIN(decimalFromDouble(18.0), decimalFromDouble(17.0))), @"decimalMIN 18-17=17");
+	XCTAssert( decimalIsEqual( decimalFromDouble(-18.0), decimalMIN(decimalFromDouble(-17.0), decimalFromDouble(-18.0))), @"decimalMIN (-17)-(-18)=(-18)");
+	XCTAssert( decimalIsEqual( decimalFromDouble(-18.0), decimalMIN(decimalFromDouble(-18.0), decimalFromDouble(-17.0))), @"decimalMIN (-18)-(-17)=(-18)");
 	XCTAssert( decimalIsEqual( decimalFromDouble(17.0), decimalMIN(decimalFromDouble(17.0), decimalFromDouble(1867.0))), @"decimalMIN 17-1867=17");
 	XCTAssert( decimalIsEqual( decimalFromDouble(17.0), decimalMIN(decimalFromDouble(1867.0), decimalFromDouble(17.0))), @"decimalMIN 1867-17=17");
 	XCTAssert( decimalIsEqual( decimalFromDouble(-17.0), decimalMIN(decimalFromDouble(17.0), decimalFromDouble(-17.0))), @"decimalMIN 17-(-17)=(-17)");

@@ -209,6 +209,12 @@ NSDecimal decimalMAX( NSDecimal decimalA, NSDecimal decimalB)
 		else
 			return decimalA;
 	}
+	if(!decimalA._isCompact) {
+		NSDecimalCompact(&decimalA);
+	}
+	if(!decimalB._isCompact) {
+		NSDecimalCompact(&decimalB);
+	}
 	int s1 = decimalA._exponent + decimalA._length;
 	int s2 = decimalB._exponent + decimalB._length;
 
@@ -228,8 +234,8 @@ NSDecimal decimalMAX( NSDecimal decimalA, NSDecimal decimalB)
 	}
 	
 	// Same size, check digits
-	int i, l = MIN(decimalA._length, decimalB._length);
-	for (i = 0; i < l; i++)
+	int i, l = MAX(decimalA._length, decimalB._length);
+	for (i = l-1; i >= 0; i--)
 	{
 		int d = decimalB._mantissa[i] - decimalA._mantissa[i];
 		
@@ -278,6 +284,12 @@ NSDecimal decimalMIN( NSDecimal decimalA, NSDecimal decimalB)
 		else
 			return decimalB;
 	}
+	if(!decimalA._isCompact) {
+		NSDecimalCompact(&decimalA);
+	}
+	if(!decimalB._isCompact) {
+		NSDecimalCompact(&decimalB);
+	}
 	int s1 = decimalA._exponent + decimalA._length;
 	int s2 = decimalB._exponent + decimalB._length;
 	
@@ -297,8 +309,8 @@ NSDecimal decimalMIN( NSDecimal decimalA, NSDecimal decimalB)
 	}
 	
 	// Same size, check digits
-	int i, l = MIN(decimalA._length, decimalB._length);
-	for (i = 0; i < l; i++)
+	int i, l = MAX(decimalA._length, decimalB._length);
+	for (i = l-1; i >= 0; i--)
 	{
 		int d = decimalB._mantissa[i] - decimalA._mantissa[i];
 		
