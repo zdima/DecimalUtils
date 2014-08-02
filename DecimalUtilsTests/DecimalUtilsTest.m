@@ -71,6 +71,7 @@
 	XCTAssert( decimalIsEqual( decimalFromDouble(-17.0), decimalMAX(decimalFromDouble(-17.0), decimalFromDouble(-17.0))), @"decimalMAX (-17)-(-17)=(-17)");
 	XCTAssert( decimalIsEqual( decimalZero, decimalMAX(decimalZero, decimalZero)), @"decimalMAX 0-0=0");
 
+	XCTAssert( decimalIsEqual( decimalFromDouble(-3838.75000000002), decimalMIN(decimalFromDouble(-3838.75000000002), decimalFromDouble(-468.03))), @"decimalMAX (-3838.75000000002)-(-468.03)=20118.14");
 	XCTAssert( decimalIsEqual( decimalFromDouble(20118.14), decimalMIN(decimalFromDouble(20348.14), decimalFromDouble(20118.14))), @"decimalMAX 20348.14-20118.14=20118.14");
 	XCTAssert( decimalIsEqual( decimalFromDouble(17.0), decimalMIN(decimalFromDouble(17.0), decimalFromDouble(18.0))), @"decimalMIN 17-18=17");
 	XCTAssert( decimalIsEqual( decimalFromDouble(17.0), decimalMIN(decimalFromDouble(18.0), decimalFromDouble(17.0))), @"decimalMIN 18-17=17");
@@ -83,9 +84,14 @@
 	XCTAssert( decimalIsEqual( decimalFromDouble(17.0), decimalMIN(decimalFromDouble(17.0), decimalFromDouble(17.0))), @"decimalMIN 17-17=17");
 	XCTAssert( decimalIsEqual( decimalFromDouble(-17.0), decimalMIN(decimalFromDouble(-17.0), decimalFromDouble(-17.0))), @"decimalMIN (-17)-(-17)=(-17)");
 	XCTAssert( decimalIsEqual( decimalZero, decimalMIN(decimalZero, decimalZero)), @"decimalMIN 0-0=0");
-	
+
     setDecimalScaleMode(4);
     XCTAssert(decimalIsEqual(decimalDivideDouble(decimalFromDouble(17.0), 3.0), decimalFromDouble(5.6667)), @"decimalDivideDouble");
+
+	setDecimalScaleMode(-1);
+	
+	XCTAssert( decimalIsEqual( decimalFromDouble(-3838.75000000002), decimalMIN(decimalFromDouble(-3838.75000000002), decimalFromDouble(-468.03))), @"decimalMAX (-3838.75000000002)-(-468.03)=20118.14");
+	XCTAssert( decimalIsEqual( decimalFromDouble(20118.14), decimalMIN(decimalFromDouble(20348.14), decimalFromDouble(20118.14))), @"decimalMAX 20348.14-20118.14=20118.14");
 }
 
 - (void)testPerformanceCopy
