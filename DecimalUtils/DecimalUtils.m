@@ -192,3 +192,141 @@ BOOL decimalIsLeftLessOrEqual(const NSDecimal left, const NSDecimal right)
     NSComparisonResult cr = NSDecimalCompare(&left, &right);
     return (cr == NSOrderedSame || cr == NSOrderedAscending);
 }
+
+NSDecimal decimalMAX( NSDecimal decimalA, NSDecimal decimalB)
+{
+	if(decimalA._isNegative != decimalB._isNegative)
+	{
+		if (decimalA._isNegative)
+			return decimalB;
+		else
+			return decimalA;
+	}
+	int s1 = decimalA._exponent + decimalA._length;
+	int s2 = decimalB._exponent + decimalB._length;
+
+	if (s1 < s2)
+	{
+		if (decimalA._isNegative)
+			return decimalA;
+		else
+			return decimalB;
+	}
+	if (s1 > s2)
+	{
+		if (decimalA._isNegative)
+			return decimalB;
+		else
+			return decimalA;
+	}
+	
+	// Same size, check digits
+	int i, l = MIN(decimalA._length, decimalB._length);
+	for (i = 0; i < l; i++)
+	{
+		int d = decimalB._mantissa[i] - decimalA._mantissa[i];
+		
+		if(d > 0)
+		{
+			if (decimalA._isNegative)
+				return decimalA;
+			else
+				return decimalB;
+		}
+		if (d < 0)
+		{
+			if (decimalA._isNegative)
+				return decimalB;
+			else
+				return decimalA;
+		}
+	}
+	
+	// Same digits, check length
+	if (decimalA._length > decimalB._length)
+	{
+		if (decimalA._isNegative)
+			return decimalB;
+		else
+			return decimalA;
+	}
+	
+	if (decimalA._length < decimalB._length)
+	{
+		if (decimalA._isNegative)
+			return decimalA;
+		else
+			return decimalB;
+	}
+	
+	return decimalA;
+}
+
+NSDecimal decimalMIN( NSDecimal decimalA, NSDecimal decimalB)
+{
+	if(decimalA._isNegative != decimalB._isNegative)
+	{
+		if (decimalA._isNegative)
+			return decimalA;
+		else
+			return decimalB;
+	}
+	int s1 = decimalA._exponent + decimalA._length;
+	int s2 = decimalB._exponent + decimalB._length;
+	
+	if (s1 < s2)
+	{
+		if (decimalA._isNegative)
+			return decimalB;
+		else
+			return decimalA;
+	}
+	if (s1 > s2)
+	{
+		if (decimalA._isNegative)
+			return decimalA;
+		else
+			return decimalB;
+	}
+	
+	// Same size, check digits
+	int i, l = MIN(decimalA._length, decimalB._length);
+	for (i = 0; i < l; i++)
+	{
+		int d = decimalB._mantissa[i] - decimalA._mantissa[i];
+		
+		if(d > 0)
+		{
+			if (decimalA._isNegative)
+				return decimalB;
+			else
+				return decimalA;
+		}
+		if (d < 0)
+		{
+			if (decimalA._isNegative)
+				return decimalA;
+			else
+				return decimalB;
+		}
+	}
+	
+	// Same digits, check length
+	if (decimalA._length > decimalB._length)
+	{
+		if (decimalA._isNegative)
+			return decimalA;
+		else
+			return decimalB;
+	}
+	
+	if (decimalA._length < decimalB._length)
+	{
+		if (decimalA._isNegative)
+			return decimalB;
+		else
+			return decimalA;
+	}
+	
+	return decimalA;
+}

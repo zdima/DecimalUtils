@@ -283,6 +283,26 @@ NSDecimal decimalFromFloat(float);
 NSDecimal decimalFromDouble(double);
 
 /**
+ * return NSDecimal which is maximum of decimalA or decimalB
+ *
+ * @param decimalA NSDecimal
+ * @param decimalB NSDecimal
+ *
+ * @return NSDecimal
+ */
+NSDecimal decimalMAX( NSDecimal decimalA, NSDecimal decimalB);
+
+/**
+ * return NSDecimal which is minimum of decimalA or decimalB
+ *
+ * @param decimalA NSDecimal
+ * @param decimalB NSDecimal
+ *
+ * @return NSDecimal
+ */
+NSDecimal decimalMIN( NSDecimal decimalA, NSDecimal decimalB);
+
+/**
  * NSDecimal representing 0
  */
 static NSDecimal decimalZero = {0, 0, NO, YES, 0, {0}};
