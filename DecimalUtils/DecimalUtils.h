@@ -303,6 +303,15 @@ NSDecimal decimalMAX( NSDecimal decimalA, NSDecimal decimalB);
 NSDecimal decimalMIN( NSDecimal decimalA, NSDecimal decimalB);
 
 /**
+ * return NSDecimal which is absolute value of decimal
+ *
+ * @param decimal NSDecimal
+ *
+ * @return NSDecimal
+ */
+NSDecimal decimalABS( NSDecimal decimal );
+
+/**
  * NSDecimal representing 0
  */
 static NSDecimal decimalZero = {0, 0, NO, YES, 0, {0}};

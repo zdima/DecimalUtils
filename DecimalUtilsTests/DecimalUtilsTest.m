@@ -46,6 +46,8 @@
     XCTAssert(decimalIsEqual(decimalDivideDouble(decimalFromDouble(17.0), 3.0), decimalFromDouble(5.67)), @"decimalDivideDouble");
     XCTAssert(decimalIsEqual(decimalDivideNumber(decimalFromDouble(17.0), [NSNumber numberWithDouble:3.0]), decimalFromDouble(5.67)), @"decimalDivideNumber");
     XCTAssert(decimalIsEqual(decimalChangeSign(decimalFromDouble(17.0)), decimalFromDouble(-17.0)), @"decimalChangeSign");
+	XCTAssert(decimalIsEqual(decimalABS(decimalFromDouble(-17.0)), decimalFromDouble(17.0)), @"decimalABS");
+	XCTAssert(decimalIsEqual(decimalABS(decimalFromDouble(17.0)), decimalFromDouble(17.0)), @"decimalABS");
     XCTAssert(decimalIsEqual(decimalFromDouble(17.0), decimalFromDouble(17.0)), @"decimalIsEqual");
     XCTAssert(decimalIsLeftGrater(decimalFromDouble(17.0), decimalFromDouble(15.0)), @"decimalIsLeftGrater");
     XCTAssert(decimalIsLeftLess(decimalFromDouble(17.0), decimalFromDouble(18.0)), @"decimalIsLeftLess");

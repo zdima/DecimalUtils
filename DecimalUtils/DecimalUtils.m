@@ -107,6 +107,13 @@ NSDecimal decimalChangeSign(const NSDecimal dc)
     return rv;
 }
 
+NSDecimal decimalABS( NSDecimal decimal )
+{
+	NSDecimal rv = decimal;
+	rv._isNegative = 0;
+	return rv;
+}
+
 NSString* decimalStringValue(const NSDecimal decimalNumber)
 {
     NSDecimal result = decimalNumber;
